@@ -1,52 +1,39 @@
-# Minesweeper
+# minesweeper
 
-Welcome to Minesweeper on Exercism's JavaScript Track.
-If you need help running the tests or submitting your code, check out `HELP.md`.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Introduction
+## Recommended IDE Setup
 
-[Minesweeper][wikipedia] is a popular game where the user has to find the mines using numeric hints that indicate how many mines are directly adjacent (horizontally, vertically, diagonally) to a square.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-[wikipedia]: https://en.wikipedia.org/wiki/Minesweeper_(video_game)
+## Type Support for `.vue` Imports in TS
 
-## Instructions
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-Your task is to add the mine counts to empty squares in a completed Minesweeper board.
-The board itself is a rectangle composed of squares that are either empty (`' '`) or a mine (`'*'`).
+## Customize configuration
 
-For each empty square, count the number of mines adjacent to it (horizontally, vertically, diagonally).
-If the empty square has no adjacent mines, leave it empty.
-Otherwise replace it with the adjacent mines count.
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-For example, you may receive a 5 x 4 board like this (empty spaces are represented here with the '·' character for display on screen):
+## Project Setup
 
-```text
-·*·*·
-··*··
-··*··
-·····
+```sh
+npm install
 ```
 
-Which your code should transform into this:
+### Compile and Hot-Reload for Development
 
-```text
-1*3*1
-13*31
-·2*2·
-·111·
+```sh
+npm run dev
 ```
 
-## Source
+### Type-Check, Compile and Minify for Production
 
-### Created by
+```sh
+npm run build
+```
 
-- @matthewmorgan
+### Lint with [ESLint](https://eslint.org/)
 
-### Contributed to by
-
-- @brendanmckeown
-- @cr0t
-- @rchavarria
-- @serixscorpio
-- @SleeplessByte
-- @xarxziux
+```sh
+npm run lint
+```
